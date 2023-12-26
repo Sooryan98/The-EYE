@@ -4,5 +4,6 @@ The code mimics the functioning of a normal eye by processing the live video fee
 
 
 
-        ![image](https://github.com/Sooryan98/The-EYE/assets/67855335/ed48a48e-e8a5-47ba-abe0-279b41ef60e4)
 
+
+<img width="324" alt="image" src="https://github.com/Sooryan98/The-EYE/assets/67855335/55a9e028-367a-4963-8f7b-fcb951513bc3">
