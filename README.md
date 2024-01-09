@@ -59,3 +59,15 @@ Buffer(page_folder, direc): Serves as the main entry point for processing pages.
 Buffer (from processor.py)
 
 Functionality: Calls different functions to process and analyze pages based on the direc parameter (0 for new pages, 1 for repeated pages). Coordinates the entire text recognition pipeline.
+
+## Video Stabilization: 
+The program begins by initializing key parameters, opening the video capture, and reading the first frame. The initial frame is converted to grayscale, and the dense optical flow is calculated to establish a baseline for motion tracking.
+
+#### Kalman Filter Integration
+A Kalman filter, a key component of the project, is created with observed motion. This filter is instrumental in predicting and correcting motion, providing a stable and smooth user experience. The Kalman filter continuously updates and stabilizes video frames based on observed motion.
+
+#### Dense Optical Flow Processing
+Throughout the operation, the Reading Glasses device continuously calculates dense optical flow between frames. This process involves extracting motion vectors and aggregating them to understand average motion, contributing to the device's stability.
+
+The device displays both the original and stabilized video frames, allowing users to perceive the enhancement achieved through image stabilization. The program monitors user input, enabling users to quit the program at their convenience. As the program concludes, it responsibly releases all resources, including the video capture, ensuring an efficient and controlled termination.
+
